@@ -7,4 +7,4 @@
 
 На Windows: добавить правило брандмауэра - разрешить входящий трафик по порту 25565; команда powershell "netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=<ip адрес wsl (команда "ifconfig" в самом wsl)>".
 
-WSL: команда для запуска контейнера: docker run -p 25565:25565 
+WSL: команда для запуска контейнера: docker run -p 25565:25565 <название собранного контейнера>
