@@ -2,7 +2,7 @@
 
 
 
-### При использовании связки Windows > WSL > Docker:\
+### При использовании связки Windows > WSL > Docker:
 \
 
 ### Windows: 
