@@ -3,15 +3,19 @@
 
 
 ### При использовании связки Windows > WSL > Docker:
-\
 
-### Windows: 
-добавить правило брандмауэра - разрешить входящий трафик по порту 25565
-проброс портов на виртуальную машину:\
-  `netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=<ip адрес wsl>`
 
-### WSL: 
-билд контейнера:\
-  `docker build -m "<название контейнера>"`\
-запуск:\
-  `docker run -p 25565:25565 <название собранного контейнера>`
+
+
+
+
+Windows: 
+> добавить правило брандмауэра - разрешить входящий трафик по порту 25565
+> проброс портов на виртуальную машину:\
+> `netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=<ip адрес wsl>`
+
+WSL: 
+> билд контейнера:\
+> `docker build -m "<название контейнера>"`\
+> запуск:\
+> `docker run -p 25565:25565 <название собранного контейнера>`
